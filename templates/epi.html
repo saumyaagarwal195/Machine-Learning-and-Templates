@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>{{data.title}}</title>
+    <link href="/static/styles.css" rel="stylesheet" />
+    <style>
+        #info {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            }
+            #info td, #info th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #info tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #info tr:hover {
+                background-color: #ddd;
+            }
+
+            #info th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+        
+    </style>
+</head>
+<body>
+        <div id="info">
+        <table style="width:100%">
+            <tr>
+                <th><h1>Message</h1></th>
+                <th><h1>Accuracy</h1></th>
+                <th><h1>Time</h1></th>
+            </tr>
+            <tr>
+                <th><h2> {{data.msg}} <br /></h2></th>
+                <th><h3> {{data.accuracy}} <br /> </h3></th>
+                <th><h3> {{data.time}} <br /></h3></th>
+            </tr>
+            <tr>
+                <th><h2> {{data1.msg}} <br /></h2></th>
+                <th><h3> {{data1.accuracy}} <br /> </h3></th>
+                <th><h3> {{data1.time}} <br /></h3></th>
+            </tr>
+            <tr>
+                <th><h2> {{data2.msg}} <br /></h2></th>
+                <th><h3> {{data2.accuracy}} <br /> </h3></th>
+                <th><h3> {{data2.time}} <br /></h3></th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
